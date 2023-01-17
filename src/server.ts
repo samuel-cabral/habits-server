@@ -7,9 +7,6 @@ const prisma = new PrismaClient()
 
 app.register(cors)
 
-app.get('/', () => {
-  return 'Hello Cal'
-})
 
 app.get('/hello', async () => {
    const habits = await prisma.habit.findMany({

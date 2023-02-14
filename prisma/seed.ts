@@ -22,7 +22,7 @@ async function run() {
     prisma.habit.create({
       data: {
         id: firstHabitId,
-        title: 'Beber 2L água',
+        title: 'Beber 2L de água',
         created_at: firstHabitCreationDate,
         weekDays: {
           create: [
